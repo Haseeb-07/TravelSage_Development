@@ -1,0 +1,18 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    max-width: fit-content;
+  }
+  .book h1{
+    text-align: center;
+  }
+  
+  .card {
+    margin-right: 10px;
+  }
+  
+  .card-body {
+    display: block; 
+  }
+  

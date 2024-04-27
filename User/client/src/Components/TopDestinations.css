@@ -1,0 +1,112 @@
+.top-destinations-container {
+  text-align: center;
+  padding:50px;
+}
+
+.top-destinations-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #f56c1f;
+}
+
+.explore-text {
+  font-size: 56px;
+  font-weight: 900; 
+  font-family: 'Merriweather', serif;
+  color: #362853;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: calc(25% - 20px);
+    max-width: 316px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 1200px) {
+    .card {
+      width: calc(33.33% - 20px);
+      max-width: 316px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+      max-width: 316px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }  
+  
+  .card-image {
+    width: 100%;
+    height: 316px;
+    object-fit: cover;
+  }
+
+  .card-info {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .destination-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #362853;
+    font-weight: 500;
+  }
+  
+  .additional-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    color: #f56c1f; 
+    opacity: 1; 
+    font-size: 28px;
+    margin-right: 5px; 
+  }
+  
+  .star:last-child {
+    color: #000000;
+    opacity: 0.5; 
+  }
+  
+  .price {
+    color: #f56c1f;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }

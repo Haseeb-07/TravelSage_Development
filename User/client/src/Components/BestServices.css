@@ -1,0 +1,95 @@
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  padding-right: 50px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.image-container {
+  width: 40%;
+  text-align: center;
+  margin-right: 180px;
+}
+
+.travel-bus-image {
+  width: 150%;
+  height: auto;
+  max-width: 150%;
+  margin-top: 20px; 
+}
+
+.how-we-work {
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #f56c1f;
+}
+
+.services-offered {
+  text-align: left;
+  font-size: 56px;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  color: #362853;
+}
+
+.service-row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 450px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.service-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.service-details {
+  text-align: left;
+}
+
+.service-heading {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #362853;
+  margin-bottom: 10px;
+}
+
+.service-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #362853;
+  opacity: 0.7;
+}

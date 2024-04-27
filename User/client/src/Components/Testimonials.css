@@ -1,0 +1,74 @@
+.testimonials {
+    padding: 50px;
+    text-align: center;
+
+  }
+  
+  h1 {
+    font-size: 56px;
+    color: #362853;
+  }
+  
+  h2 {
+    color: #f56c1f;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .testimonial-cards {
+    display: flex; 
+    justify-content: space-around;
+  }
+  
+  .review {
+    width: 30%; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #ffff;
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .card-logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .card-details {
+    text-align: left;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-subtitle {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .card-text {
+    text-align: left;
+    padding: 0 10px;
+    color: #333;
+  }
+  
+  .stars {
+    color: #f56c1f;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .stars span {
+    font-size: 1.5em;
+    margin-right: 3px;
+  }
