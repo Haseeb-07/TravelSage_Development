@@ -16,10 +16,10 @@ mongoose.connect(process.env.MONGODB_URL, {
   useUnifiedTopology: true
 })
 .then(() => {
-  console.log("Connected to MongoDB Atlas");
+  console.log("Connected to MongoDB");
 })
 .catch(err => {
-  console.error("Error connecting to MongoDB Atlas:", err);
+  console.error("Error connecting to MongoDB", err);
 });
 
 app.use('/api/packages', packageRoutes);

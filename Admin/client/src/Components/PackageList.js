@@ -18,7 +18,25 @@ const PackageList = () => {
     };
 
     fetchPackages();
-  }, [packages]);
+  }, []);
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5000/api/packages/${id}`);
+      setPackages(packages.filter(pkg => pkg._id !== id)); // Ensure correct ID comparison
+    } catch (error) {
+      console.error('Error deleting package:', error);
+    }
+  };
+
+  const handleSave = async (editedPackage) => {
+    try {
+      await axios.put(`http://localhost:5000/api/packages/${editedPackage._id}`, editedPackage);
+      setPackages(packages.map(pkg => (pkg._id === editedPackage._id ? editedPackage : pkg)));
+    } catch (error) {
+      console.error('Error updating package:', error);
+    }
+  };
 
   return (
     <Container>
@@ -29,9 +47,13 @@ const PackageList = () => {
         </Button>
       </Link>
       <Row>
-        {packages.map((pkg, index) => (
-          <Col key={index} xs={12} sm={6} md={4} lg={3}>
-            <Package {...pkg} />
+        {packages.map(pkg => (
+          <Col key={pkg._id} xs={12} sm={6} md={4} lg={3}>
+            <Package
+              {...pkg}
+              onDelete={() => handleDelete(pkg._id)} // Pass the function reference without invoking it
+              onSave={handleSave}
+            />
           </Col>
         ))}
       </Row>
