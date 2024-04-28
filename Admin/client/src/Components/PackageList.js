@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Package from './Package';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 
 const PackageList = () => {
   const [packages, setPackages] = useState([]);
@@ -23,7 +23,7 @@ const PackageList = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:5000/api/packages/${id}`);
-      setPackages(packages.filter(pkg => pkg._id !== id)); // Ensure correct ID comparison
+      setPackages(packages.filter(pkg => pkg._id !== id));
     } catch (error) {
       console.error('Error deleting package:', error);
     }
@@ -41,7 +41,7 @@ const PackageList = () => {
   return (
     <Container>
       <h1>Packages</h1>
-      <Link to="/createpackage"> {/* Link to the '/createpackage' route */}
+      <Link to="/createpackage">
         <Button variant="primary" className="mb-3">
           Create Package
         </Button>
@@ -51,7 +51,7 @@ const PackageList = () => {
           <Col key={pkg._id} xs={12} sm={6} md={4} lg={3}>
             <Package
               {...pkg}
-              onDelete={() => handleDelete(pkg._id)} // Pass the function reference without invoking it
+              onDelete={() => handleDelete(pkg._id)}
               onSave={handleSave}
             />
           </Col>
