@@ -28,7 +28,7 @@ function Navbar() {
               <Link to="/packages" className="nav-link packages" href="abc.com">Packages</Link>
             </li>
             <li className="nav-item">
-              <button className="btn btn-success btn-transparent-border">Create Package</button>
+              <Link to="/customizedpackage" className="btn btn-success btn-transparent-border">Create Package</Link>
             </li>
             <li className="nav-item">
               <div className="user-container">

@@ -1,0 +1,90 @@
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  
+  .form-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    color: #F56C1F;
+    margin-bottom: 20px;
+  }
+  
+  .form-input-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 30px; 
+}
+
+  .form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+    font-size: 30px;
+    color: #000000;
+    flex: 0 0 auto; 
+    margin-right: 10px;
+  }
+
+  .form-input {
+     font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #000000;
+    border-radius: 5%;
+    padding: 8px 16px; 
+    border: 1px solid #ccc; 
+    flex: 1;  /* Add border for better visibility */
+    width: 100%; /* Ensure select element fills its container */
+    max-width: 100%; /* Ensure select element fills its container */
+    box-sizing: border-box;
+  }
+  
+  
+  .form-input option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #000000;
+  }
+  
+  /* Hide default dropdown arrow */
+  .form-input::-ms-expand,
+  .form-input::-webkit-inner-spin-button,
+  .form-input::-webkit-outer-spin-button {
+    display: none;
+  }
+  
+  /* Style for the selected options */
+  .form-input option:checked {
+    background-color: #f0f0f0; /* Change background color of selected option */
+  }
+
+  .form-label img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  
+  .form-input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.4; 
+  }
+  
+  .form-submit {
+    width: 150px;
+    height: 65px;
+    background-color: #00B19C;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; 
+  }
+  

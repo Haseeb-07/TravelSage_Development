@@ -4,6 +4,7 @@ import Packages from './Pages/Packages'
 import About from './Pages/About';
 import TopDestinations from './Pages/TopDestinations';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CustomizedPage from './Pages/CustomizedPage';
 export default function App() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/packages" element={<Packages/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/topdestinations" element={<TopDestinations/>}/>
+        <Route path="/customizedpackage" element={<CustomizedPage/>}/>
         </Routes>
       </BrowserRouter>
         </>
