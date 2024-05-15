@@ -8,7 +8,7 @@ const Map = () => {
   const [userLocation, setUserLocation] = useState(null);
 
   useEffect(() => {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiaGFzZWViY2giLCJhIjoiY2xzZmlvdzRkMGY5ODJrcXRsb2ZkZjRjMCJ9.fykQgyfolrVw6FkoIuXBOQ';
+    mapboxgl.accessToken ='your token here';
 
     const initializeMap = () => {
       const newMap = new mapboxgl.Map({
